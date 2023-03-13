@@ -1,0 +1,20 @@
+how to fix pyspark error
+
+- controleer dat python 3.10 is geinstalleerd met het volgende commando
+	ls -ls /usr/bin/python*
+- als het volgende pad bestaat, sla het volgende punt over over
+	/usr/bin/python3.10
+- installeer python 3.10
+	sudo apt install python3.10
+- verwijder de anaconda folder in je home directory
+- vervang de .bashrc file inhoud met de gegeven bashrc file
+- voer het commando source .bashrc uit (of herstart de terminal)
+- install opnieuw jupyter notebook
+	pip install --upgrade pip
+	pip install jupyter
+- install pydoop
+	sudo apt-get install python-dev-is-python3
+	sudo apt-get install libntirpc-dev
+	pip install --install-option=build_ext --install-option="-I/usr/include/tirpc" pydoop
+- install pyspark
+	pip install pyspark
